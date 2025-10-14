@@ -83,3 +83,7 @@ http://relay.csh.rit.edu {
 http://attendance.csh.rit.edu {
 	redir https://conditional.csh.rit.edu/attendance_cm permanent
 }
+
+http://github.csh.rit.edu {
+    redir https://github.com/ComputerScienceHouse permanent
+}
