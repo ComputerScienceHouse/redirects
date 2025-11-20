@@ -36,6 +36,10 @@ http://donate.csh.rit.edu {
     redir https://www.rit.edu/giving/ComputerScienceHouse permanent
 }
 
+http://evals.csh.rit.edu {
+	redir https://csh.rit.edu/membership/intro-process.html permanent
+}
+
 http://enforcement.csh.rit.edu, http://enforcementguidelines.csh.rit.edu {
     redir https://docs.google.com/spreadsheets/d/1-GqLrfIXvPquWrr33p_Zr8IwUp-xUyCcDHDC-Up6hDQ/edit?usp=sharing permanent
 }
