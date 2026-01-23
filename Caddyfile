@@ -94,5 +94,11 @@ http://github.csh.rit.edu {
 
 http://arfcomm.csh.rit.edu {
     rewrite * /~cole/arfcomm.jpg
-    reverse_proxy http://csh.rit.edu
+    reverse_proxy {
+        to csh.rit.edu:443
+        transport http {
+            tls
+        }
+        header_up Host csh.rit.edu
+    }
 }
