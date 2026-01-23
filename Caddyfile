@@ -91,3 +91,8 @@ http://attendance.csh.rit.edu {
 http://github.csh.rit.edu {
     redir https://github.com/ComputerScienceHouse permanent
 }
+
+http://arfcomm.csh.rit.edu {
+    rewrite * /~cole/arfcomm.jpg
+    reverse_proxy http://csh.rit.edu
+}
