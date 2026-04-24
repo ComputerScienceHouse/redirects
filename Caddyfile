@@ -102,3 +102,7 @@ http://arfcomm.csh.rit.edu {
         header_up Host csh.rit.edu
     }
 }
+
+http://p.r.o.f.i.l.e.s.csh.rit.edu {
+    redir https://profiles.csh.rit.edu
+}
