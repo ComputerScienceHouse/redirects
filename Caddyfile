@@ -68,6 +68,10 @@ http://segfault.csh.rit.edu {
     redir https://gallery.csh.rit.edu/view/dir/698 permanent
 }
 
+http://selections-rewrite.cs.house {
+	redir https://selections.csh.rit.edu permanent
+}
+
 http://slack.csh.rit.edu {
     redir https://cshrit.slack.com permanent
 }
