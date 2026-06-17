@@ -16,6 +16,10 @@ http://calendar.csh.rit.edu {
     redir https://www.google.com/calendar/embed?src=rti648k5hv7j3ae3a3rum8potk%40group.calendar.google.com&ctz=America/New_York permanent
 }
 
+http://opensauce-calendar.csh.rit.edu {
+		redir https://calendar.google.com/calendar/embed?src=c_8cd6989d87d5825928f8a36c43b53e1521ae62ebc4455abb8cf398f4374a5186%40group.calendar.google.com&ctz permanent
+}
+
 http://ceph.csh.rit.edu {
     reverse_proxy {
         to https://ceph-mon01-dsp.csh.rit.edu:8443 https://ceph-mon02-dsp.csh.rit.edu:8443 https://ceph-mon03-dsp.csh.rit.edu:8443
