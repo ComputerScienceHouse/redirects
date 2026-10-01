@@ -84,10 +84,6 @@ http://spending.csh.rit.edu {
     redir https://docs.google.com/spreadsheets/d/1zLA7CWt1rNgeqwUCiex5-iofAZ-DndgqPAxM3FzKmhY/edit?usp=sharing permanent
 }
 
-http://zoom.csh.rit.edu {
-    redir https://rit.zoom.us/my/lhg9793 permanent
-}
-
 http://relay.csh.rit.edu {
     redir http://main.acsevents.org/site/TR?team_id=2734076&pg=team&fr_id=107231&s_locale=en_US&et=yT1GZzTwT_CSAuxP2wF2_q8xYRvv3TkovL0YIqZ0DGm9eoSK_7lGYA&s_tafId=2505960 permanent
 }
