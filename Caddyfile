@@ -107,6 +107,19 @@ http://arfcomm.csh.rit.edu {
     }
 }
 
+http://prints.csh.rit.edu {
+    @hasprefix path_regexp strip ^/~prints/?(.*)$
+
+    route {
+        redir @hasprefix /{re.strip.1} 308
+        rewrite * /~prints{uri}
+        reverse_proxy https://members.csh.rit.edu {
+            header_up Host members.csh.rit.edu
+            header_down Location ^https://members\.csh\.rit\.edu/~prints/(.*)$ http://prints.csh.rit.edu/$1
+        }
+    }
+}
+
 http://p.r.o.f.i.l.e.s.csh.rit.edu {
     redir https://profiles.csh.rit.edu
 }
